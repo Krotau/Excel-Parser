@@ -12,6 +12,9 @@ from Utils.Repository import Repository
 def main():
     orchestrator = Orchestrator()
     repository = Repository(orchestrator)
+    repository.create_all()
+    repository.add_dummy_data()
+    repository.read_all_klant()
 
 
 if __name__ == "__main__":
