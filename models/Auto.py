@@ -1,8 +1,8 @@
 from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import relationship
 
-from Models.Kenteken import Kenteken
-from Utils.Orchestrator import Orchestrator
+from models.Kenteken import Kenteken
+from utils.orchestrator import Orchestrator
 
 
 class Auto(Orchestrator().base):

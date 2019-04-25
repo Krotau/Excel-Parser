@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from Utils.Orchestrator import Orchestrator
+from utils.orchestrator import Orchestrator
 
 
 class Kenteken(Orchestrator().base):

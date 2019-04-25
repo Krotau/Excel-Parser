@@ -1,7 +1,7 @@
 import unittest
-from Models.Klant import Klant
-from Models.Auto import Auto
-from Models.Kenteken import Kenteken
+from models.Klant import Klant
+from models.Auto import Auto
+from models.Kenteken import Kenteken
 
 
 class TestKlant(unittest.TestCase):
@@ -15,7 +15,7 @@ class TestKlant(unittest.TestCase):
 
 class TestAuto(unittest.TestCase):
     """
-    Test the klant.. duh
+    Test the auto.. duh
     """
 
     def test_auto(self):
@@ -24,7 +24,7 @@ class TestAuto(unittest.TestCase):
 
 class TestKenteken(unittest.TestCase):
     """
-    Test the klant.. duh
+    Test the kenteken.. duh
     """
 
     def test_kenteken(self):

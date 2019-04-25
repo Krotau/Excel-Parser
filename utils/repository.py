@@ -2,19 +2,22 @@
 # This file is responsible as acting as the repository. The repository uses defined functions
 # in order to communicate with a database given a connection string.
 #
-from Models.Klant import Klant
-from Models.Auto import Auto
-from Models.Kenteken import Kenteken
-from Utils.Orchestrator import Orchestrator
+from models.Klant import Klant
+from models.Auto import Auto
+from models.Kenteken import Kenteken
+from utils.orchestrator import Orchestrator
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm.session import Session
 from random import randint
 
 
-
 class Repository:
 
     def __init__(self, orchestrator: Orchestrator):
+        """
+        :param orchestrator:
+        :type orchestrator { Orchestrator }
+        """
         self.orchestrator = orchestrator
         self.create_session = sessionmaker(bind=self.orchestrator.engine)
         self.session: Session = self.create_session()

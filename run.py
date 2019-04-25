@@ -5,8 +5,8 @@
 # Author:       Tim Smeets
 #
 
-from Utils.Orchestrator import Orchestrator
-from Utils.Repository import Repository
+from utils.orchestrator import Orchestrator
+from utils.repository import Repository
 
 
 def main():
@@ -19,4 +19,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

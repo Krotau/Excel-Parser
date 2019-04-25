@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from Utils.Singleton import Singleton
+from utils.singleton import Singleton
 
 
 class Orchestrator(metaclass=Singleton):

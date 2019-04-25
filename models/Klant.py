@@ -1,9 +1,9 @@
 # Klant Model
 from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import relationship
-from Models.Kenteken import Kenteken
+from models.Kenteken import Kenteken
 
-from Utils.Orchestrator import Orchestrator
+from utils.orchestrator import Orchestrator
 
 
 class Klant(Orchestrator().base):
